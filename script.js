@@ -42,7 +42,6 @@ function getSearch(searchValue) {
                     <p>Album: ${lyric.album.title}</p>
                     <p>By: ${lyric.artist.name}</p>
                     <audio controls>
-                    <source src="horse.ogg" type="audio/ogg">
                     <source src="${lyric.preview}" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
