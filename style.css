@@ -50,9 +50,11 @@ body{
 .container form .form-box #search-input{
    border: none;
    outline: none;
+   border-radius: 123px;
    font-size: 30px;
    height: 60px;
-   background: transparent;
+   background: #444;
+   color: #fff;
    width: 100%;
    padding: 0 30px;
    font-weight: 500;
@@ -64,7 +66,7 @@ body{
     font-size: 25px;
     height: 60px;
 }
-#get-lyric-btn{
+.get-lyric-btn{
     font-size: 20px;
     height: 50px;
 
@@ -85,6 +87,16 @@ body{
     padding: 20px;
     border-radius: 10px;
     width: calc(100% - 20px);
+}
+.item-text-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.item-text-body img{
+    width: 150px;
+    border-radius: 10px;
 }
 .item-text{}
 .item-text h2{
@@ -128,6 +140,15 @@ body{
     .item{
         flex-direction: column;
         gap:10px;
+        padding: 0;
+        width: 100%;
+    }
+    .item-text-body{
+       flex-direction: column;
+        gap: 20px;
+    }
+    .item-text-body img {
+        width: 100%;
     }
     .item-text{
         text-align: center;
@@ -147,14 +168,19 @@ body{
         width: 100%;
         height: 50px;
      }
-     #get-lyric-btn {
+     .get-lyric-btn {
         height: 40px;
+        margin-bottom: 20px;
     }
     .lyrics-box{
         width: 100%;
     }
     .lyrics-box h2{
-        width: calc(100%-10px);
+        width: auto;
+    }
+    audio{
+        width: 90%;
+        margin-top: 10px;
     }
    
 }
