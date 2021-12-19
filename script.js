@@ -40,11 +40,7 @@ function getSearch(searchValue) {
                 <div class="item-text">
                     <h2>${lyric.title}</h2>
                     <p>Album: ${lyric.album.title}</p>
-                    <p>By: ${lyric.artist.name}</p>
-                    <audio controls>
-                    <source src="${lyric.preview}" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
+                    <p>By: ${lyric.artist.name}</p>                    
                 </div>
               
             </div>
